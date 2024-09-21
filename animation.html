@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro to Computing</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to CSS for styling -->
+</head>
+<body class="container1">
+    <div class="container">
+        <span class="text first-text">I'm a</span>
+        <span class="text sec-text"></span>
+    </div>
+
+    <script>
+        const text = document.querySelector(".sec-text");
+
+        const textLoad = () => {
+            setTimeout(()=>{
+                text.textContent = "Student"
+            }, 0);
+            setTimeout(()=>{
+                text.textContent = "Developer"
+            }, 4000);
+            setTimeout(()=>{
+                text.textContent = "Freelancer"
+            }, 8000);
+            setTimeout(()=>{
+                text.textContent = "Programmer"
+            }, 12000);
+            setTimeout(()=>{
+                text.textContent = "Video Editor"
+            }, 16000);
+            
+        }
+
+        textLoad();
+        setInterval(textLoad, 20000);
+    </script>
+
+ <button class ="button1"><h1><a href="yesno.html">Start</a></h1></button>
+</body>
